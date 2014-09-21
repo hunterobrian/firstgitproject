@@ -52,6 +52,16 @@
       </div>
 
       <div class="row">
+        <button type="button" class="btn btn-primary">Show teammate details</button> 
+        <button type="button" class="btn btn-success">Fetch teammate's details and populate the UI</button>
+        <div class="col hidden teammate">
+          <h2>Jon Stewart</h2>
+          <h3>Hobbies</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="row">
 
         <div class="col-sm-8 blog-main">
 
@@ -173,5 +183,6 @@
     <script src="assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/my_app.js"></script>
   </body>
 </html>
