@@ -52,7 +52,7 @@
       </div>
 
       <div class="row">
-        <button type="button" class="btn btn-primary">Show teammate details</button> 
+        <button type="button" class="btn btn-primary toggle-visibility">Show teammate details</button> 
         <button type="button" class="btn btn-success">Fetch teammate's details and populate the UI</button>
         <div class="col hidden teammate">
           <h2>Jon Stewart</h2>

@@ -1,7 +1,16 @@
 $( document ).ready(function() {
 
     $( "button.toggle-visibility" ).on( "click", function() {
-        
+        $(".teammate").toggleClass("hidden");
+        var is_button_hidden = $(".teammate").hasClass("hidden");
+        if (is_button_hidden) {            
+            $(this).html("Show details");
+        }
+        else {
+            $(this).html("Hide details");
+        }
+
+
     });
 
     $( "button.toggle-teammate-meta" ).on( "click", function() {
