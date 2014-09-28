@@ -15,18 +15,17 @@ $( document ).ready(function() {
 
     $( "button.toggle-teammate-meta" ).on( "click", function() {
         console.log("Fetching teammate data");
-        var data_that_was_fetched = fetch_teammates_details();        
+        var data_that_was_fetched = fetch_teammates_details();
         $.when( data_that_was_fetched ).then(function( our_promised_data ) {
             console.log("data_that_was_fetched from details:", our_promised_data);
         
-        var teammate_wrapper = $(".col.teammate");
-        if (teammate_wrapper){
-            // teammate_wrapper.html("");
+        var $teammate_wrapper = $(".col.teammate");
+        if ($teammate_wrapper){
             var full_name = our_promised_data.first_name + " " + our_promised_data.last_name;
-            var full_name_h2 = teammate_wrapper.find("h2");
+            var full_name_h2 = $teammate_wrapper.find("h2");
             full_name_h2.html(full_name);
             var hobbies = our_promised_data.hobbies;
-            var hobbies_p = teammate_wrapper.find("p");
+            var hobbies_p = $teammate_wrapper.find("p");
             hobbies_p.html(hobbies);
 
         }

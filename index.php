@@ -58,6 +58,7 @@
           <h2>Jon Stewart</h2>
           <h3>Hobbies</h3>
           <p></p>
+          <p>Member since 2014.</p>
         </div>
       </div>
 
